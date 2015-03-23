@@ -1,0 +1,5 @@
+#!/bin/bash
+#RcOok.cpp RCSwitch.cpp 
+g++ sniffer.cpp RcOok.cpp ClimeMetDecoder.cpp -o sniffer -I /home/pi/PIGPIO/ -L /home/PI/PIGPIO -l pigpio -lrt -pthread
+g++ testDecode.cpp RcOok.cpp ClimeMetDecoder.cpp -o testDecode -lrt -pthread
+ 
